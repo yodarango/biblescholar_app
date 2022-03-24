@@ -14,12 +14,31 @@
   --proceed-color: #90d171;
 
   /****************************************/
+  /*********** Font Sizing ***************/
+  /**************************************/
+  --body-font: 2rem;
+  --title-font: 5rem;
+  --sub-title-font: 3rem;
+  --small-font: 1.6rem;
+
+  /****************************************/
   /*********** Input Dimmensions *********/
   /**************************************/
   --input-width: 19rem;
   --input-height: 3.1rem;
   --input-padding: 0.5rem;
   --input-radius: 0.5rem;
+
+  /****************************************/
+  /*********** Spacing Elements **********/
+  /**************************************/
+  --xxsmall-spacing: 0.3rem;
+  --xsmall-spacing: 0.5rem;
+  --small-spacing: 0.8rem;
+  --medium-spacing: 1rem;
+  --large-spacing: 1.5rem;
+  --xlarge-spacing: 2rem;
+  --xxlarge-spacing: 3rem;
 
   /****************************************/
   /*********** Main Wrapper *************/
@@ -56,6 +75,7 @@ body {
   line-height: 1.8em;
   background-color: var(--primary-color);
   color: var(--font-color);
+  font-size: var(--sub-title-font);
 }
 
 a:visited,
