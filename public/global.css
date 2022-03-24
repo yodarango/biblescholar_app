@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/vkq8fxg.css");
 /****************************************  variables *********************************** */
 :root {
   /****************************************/
@@ -12,14 +13,26 @@
   --gradient-two: #ff0045;
   --warning-color: #ec3b3b;
   --proceed-color: #90d171;
+  --shadow-color: #191622;
+  --shadow-color--light: #302b40;
+  --shadow-contrasting-bkg: #2c263a;
 
   /****************************************/
   /*********** Font Sizing ***************/
   /**************************************/
-  --body-font: 2rem;
-  --title-font: 5rem;
-  --sub-title-font: 3rem;
-  --small-font: 1.6rem;
+  --body-font-size: 2rem;
+  --title-font-size: 5rem;
+  --sub-title-font-size: 3rem;
+  --small-font-size: 1.6rem;
+
+  /****************************************/
+  /*********** Font Family ***************/
+  /**************************************/
+  --title-font: 800 4rem museo-sans-display, sans-serif;
+  --body-font: 100 1.8rem museo-sans-rounded, sans-serif;
+  --button-font: 700 1.8rem museo-sans-rounded, sans-serif;
+
+  font-weight: 700;
 
   /****************************************/
   /*********** Input Dimmensions *********/
@@ -34,11 +47,11 @@
   /**************************************/
   --xxsmall-spacing: 0.3rem;
   --xsmall-spacing: 0.5rem;
-  --small-spacing: 0.8rem;
-  --medium-spacing: 1rem;
-  --large-spacing: 1.5rem;
-  --xlarge-spacing: 2rem;
-  --xxlarge-spacing: 3rem;
+  --small-spacing: 1rem;
+  --medium-spacing: 1.5rem;
+  --large-spacing: 2.2rem;
+  --xlarge-spacing: 2.8rem;
+  --xxlarge-spacing: 3.5rem;
 
   /****************************************/
   /*********** Main Wrapper *************/
@@ -75,7 +88,7 @@ body {
   line-height: 1.8em;
   background-color: var(--primary-color);
   color: var(--font-color);
-  font-size: var(--sub-title-font);
+  font: var(--body-font);
 }
 
 a:visited,
@@ -95,15 +108,15 @@ a:link {
 }
 
 /****************************************  Globals *********************************** */
-.main-wrapper {
+.global-wrapper {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .main-wrapper {
   width: var(--main-wrapper);
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /* ------------------Icons                                                       */
@@ -145,6 +158,30 @@ a:link {
   justify-content: flex-end;
 }
 
+/* ----------------- buttons                                */
+.std-button {
+  display: block;
+  width: 15rem;
+  padding: var(--small-spacing);
+  background-color: var(--third-color);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: var(--medium-spacing) auto;
+  transition: background-color 300ms ease-in;
+  box-shadow: inset 1.5px 1.5px 1px 1px var(--graient-one),
+    inset -1px -1px 3px 1px var(--gradient-two);
+  transition: 300ms;
+}
+
+.small-button {
+  width: 6rem;
+  height: 4.5rem;
+  background-color: var(--shadow-contrasting-bkg);
+  box-shadow: 5px 5px 10px 2px var(--shadow-color),
+    -0.5px -0.5px 1px 0.5px var(--shadow-color--light);
+  border-radius: 0.5rem;
+}
+
 /* ----------------- text                                */
 .gradient-text {
   background-image: linear-gradient(
@@ -162,4 +199,9 @@ a:link {
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.std-button .gradient-text,
+.small-button .gradient-text {
+  font: var(--button-font);
 }

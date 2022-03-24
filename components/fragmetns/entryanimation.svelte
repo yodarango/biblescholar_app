@@ -33,7 +33,7 @@
   .intro-text {
     width: 100%;
     text-align: center;
-    font-size: 5rem;
+    font: var(--title-font);
     opacity: 0;
     animation: IntroText 3s ease-in-out;
   }
