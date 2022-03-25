@@ -1,17 +1,18 @@
 <section class="std-flex-row std-flex--nowrap buttons-wrapper">
   <a
     href="https://apps.apple.com/us/app/girlspring/id1520838902"
-    class="small-button download-button apple-btn"
+    class="small-button download-button apple-btn std-flex-row std-flex--nowrap"
   >
     <div class="apple-logo-btn">
       <span class="right" />
       <span class="bottom" />
       <span class="left" />
     </div>
+    <span class="app-store-btn-text">App Store</span>
   </a>
   <a
     href="https://play.google.com/store?utm_source=na_Med&utm_medium=hasem&utm_content=Oct0120&utm_campaign=Evergreen&pcampaignid=MKT-EDR-na-us-1000189-Med-hasem-py-Evergreen-Oct0120-Text_Search_BKWS-id_101419_%7cEXA%7cONSEM_kwid_43700023142506860&gclsrc=ds&gclsrc=ds"
-    class="small-button download-button google-play-btn std-flex-row"
+    class="small-button download-button google-play-btn std-flex-row std-flex--nowrap"
   >
     <div class="google-play-logo-btn">
       <span class="blue" />
@@ -19,8 +20,9 @@
       <span class="green" />
       <span class="yellow" />
       <span class="google-shadow" />
-    </div></a
-  >
+    </div>
+    <span class="google-play-btn-text">Play Store</span>
+  </a>
 </section>
 
 <style>
@@ -42,11 +44,33 @@
     box-shadow: 0.5px 0.5px 30px 0px #7bbfff62,
       -0.5px -0.5px 30px 0px rgba(123, 191, 255, 0.486);
   }
+
+  .app-store-btn-text,
+  .google-play-btn-text {
+    font: var(--button-font);
+    font-size: 1.5rem;
+    display: none;
+    margin-left: var(--xsmall-spacing);
+    animation: ButtonText 300ms ease;
+  }
+
+  @keyframes ButtonText {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    33% {
+      display: inline-flex;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   /* ------------------ apple logo button  */
   .apple-logo-btn {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   .apple-logo-btn span {
@@ -81,6 +105,7 @@
     transform: rotate(90deg);
     top: 1rem;
   }
+
   /* --------------- Google play button          */
   .google-play-btn:hover {
     box-shadow: 0.5px 0.5px 30px 0px #24ad468a, -0.5px -0.5px 30px 0px #24ad468a;
@@ -102,7 +127,7 @@
   }
 
   .google-play-logo-btn:hover {
-    filter: drop-shadow(1px 1px 5px #24ad47);
+    filter: drop-shadow(1px 1px 10px #24ad47);
   }
 
   .google-play-logo-btn .blue {
@@ -124,5 +149,37 @@
     clip-path: polygon(100% 50%, 75% 35%, 20% 50%, 75% 65%);
     background-color: #ffd001;
     z-index: 1;
+  }
+
+  @media (min-width: 750px) {
+    .buttons-wrapper {
+      position: relative;
+      z-index: 3;
+      width: 30rem;
+      margin: 10rem var(--xlarge-spacing) var(--large-spacing) auto;
+    }
+
+    .small-button:hover {
+      width: 15rem;
+    }
+    .small-button:hover .google-play-btn-text,
+    .small-button:hover .app-store-btn-text {
+      animation: ButtonText 500ms ease;
+      display: inline-block;
+    }
+
+    @keyframes ButtonText {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      80% {
+        transform: scale(1);
+      }
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
   }
 </style>

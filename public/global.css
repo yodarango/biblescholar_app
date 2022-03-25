@@ -15,15 +15,7 @@
   --proceed-color: #90d171;
   --shadow-color: #191622;
   --shadow-color--light: #302b40;
-  --shadow-contrasting-bkg: #2c263a;
-
-  /****************************************/
-  /*********** Font Sizing ***************/
-  /**************************************/
-  --body-font-size: 2rem;
-  --title-font-size: 5rem;
-  --sub-title-font-size: 3rem;
-  --small-font-size: 1.6rem;
+  --shadow-contrasting-bkg: #322c40;
 
   /****************************************/
   /*********** Font Family ***************/
@@ -57,7 +49,7 @@
   /*********** Main Wrapper *************/
   /**************************************/
   --main-wrapper: 92%;
-  --max-width-main-wrapper: 31.25rem;
+  --max-width-main-wrapper: 50rem;
 
   /****************************************/
   /*********** Breaks ********************/
@@ -117,6 +109,7 @@ a:link {
 
 .main-wrapper {
   width: var(--main-wrapper);
+  max-width: var(--max-width-main-wrapper);
   margin: 0 auto;
 }
 
@@ -205,4 +198,76 @@ a:link {
 .std-button .gradient-text,
 .small-button .gradient-text {
   font: var(--button-font);
+}
+
+.big-title {
+  font: var(--title-font);
+}
+
+.std-title {
+  font: calc(var(--title-font) + 0.5);
+}
+
+.small-title {
+  font: calc(var(--title-font) + 0.3);
+}
+
+/****************************************  IPAD BREAKPOINT *********************************** */
+
+@media (min-width: 750px) {
+  :root {
+    /****************************************/
+    /*********** Font Family ***************/
+    /**************************************/
+    --title-font: 800 6rem museo-sans-display, sans-serif;
+    --body-font: 100 2.3rem museo-sans-rounded, sans-serif;
+    --button-font: 700 2rem museo-sans-rounded, sans-serif;
+
+    /****************************************/
+    /*********** Spacing Elements **********/
+    /**************************************/
+    --xxsmall-spacing: 0.5rem;
+    --xsmall-spacing: 0.7rem;
+    --small-spacing: 1.2rem;
+    --medium-spacing: 1.8rem;
+    --large-spacing: 2.5rem;
+    --xlarge-spacing: 3rem;
+    --xxlarge-spacing: 3.8rem;
+
+    /****************************************/
+    /*********** Main Wrapper *************/
+    /**************************************/
+    --main-wrapper: 90%;
+    --max-width-main-wrapper: 80rem;
+  }
+}
+
+/****************************************  DESKTOP BREAKPOINT *********************************** */
+
+@media (min-width: 1050px) {
+  :root {
+    /****************************************/
+    /*********** Font Family ***************/
+    /**************************************/
+    --title-font: 800 7rem museo-sans-display, sans-serif;
+    --body-font: 100 2.8rem museo-sans-rounded, sans-serif;
+    --button-font: 700 2.2rem museo-sans-rounded, sans-serif;
+
+    /****************************************/
+    /*********** Spacing Elements **********/
+    /**************************************/
+    --xxsmall-spacing: 0.8rem;
+    --xsmall-spacing: 1rem;
+    --small-spacing: 1.5rem;
+    --medium-spacing: 2.2rem;
+    --large-spacing: 2.8rem;
+    --xlarge-spacing: 3.5em;
+    --xxlarge-spacing: 4.2rem;
+
+    /****************************************/
+    /*********** Main Wrapper *************/
+    /**************************************/
+    --main-wrapper: 90%;
+    --max-width-main-wrapper: 110rem;
+  }
 }

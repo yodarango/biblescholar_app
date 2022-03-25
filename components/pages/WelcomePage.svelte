@@ -7,6 +7,7 @@
   <WelcomePageTop />
   <DownloadButtons />
   <img
+    draggable="false"
     src="assets/images/Africa.png"
     alt="planet earth"
     class="plannet-earth"
@@ -16,11 +17,12 @@
 <style>
   .plannet-earth {
     position: absolute;
-    width: 800px;
-    bottom: -100px;
-    left: -300px;
+    width: 80vw;
+    bottom: -10rem;
+    left: -30rem;
     object-fit: contain;
     object-position: center;
     transform: rotate(-45deg);
+    z-index: 1;
   }
 </style>

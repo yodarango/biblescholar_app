@@ -21,7 +21,12 @@
   {:else if currInterval === 2}
     <h1 class="intro-text"><span class="gradient-text">APPROVED</span></h1>
   {:else if currInterval === 3}
-    <img src={"assets/images/logo.png"} alt="ah1h1 logo" class="logo" />
+    <img
+      draggable="false"
+      src={"assets/images/logo.png"}
+      alt="ah1h1 logo"
+      class="logo"
+    />
   {/if}
 </div>
 
@@ -40,9 +45,12 @@
 
   .logo {
     width: 100%;
+    margin: auto;
+    display: block;
     object-fit: center;
     object-position: center;
     animation: IntroLogo 3s ease-in-out;
+    max-width: 50rem;
   }
   @keyframes IntroText {
     0% {

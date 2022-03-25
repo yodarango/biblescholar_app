@@ -21,7 +21,7 @@
   }, 2000);
 </script>
 
-<div class="main-wrapper">
+<div class="welcme-intro-wrapper">
   <div class="welcome-wrapper">
     <h1 class="welcome-title">
       <span class="gradient-text welcome">WELCOME</span>
@@ -38,12 +38,13 @@
 </div>
 
 <style>
-  .main-wrapper {
-    width: 100%;
+  .welcme-intro-wrapper {
+    position: relative;
+    z-index: 2;
   }
-
   .welcome-wrapper {
-    margin-top: 10rem;
+    margin: 15rem auto var(--medium-spacing);
+    max-width: 40rem;
   }
 
   .welcome-title,
@@ -68,9 +69,10 @@
   .welcome-sub-title {
     text-align: right;
   }
+
   .welcome-text {
-    width: 100%;
-    margin: var(--medium-spacing) auto;
+    width: 32rem;
+    margin: var(--xxlarge-spacing) auto var(--medium-spacing);
     line-height: 1.5em;
     text-align: left;
     height: 2rem;
@@ -114,6 +116,30 @@
       opacity: 1;
       transform: none;
       text-shadow: none;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .welcome-wrapper {
+      margin: 18rem auto var(--medium-spacing);
+      max-width: 60rem;
+    }
+
+    .welcome-text {
+      width: 40rem;
+      height: 3rem;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    .welcome-wrapper {
+      margin: 20rem auto var(--medium-spacing);
+      max-width: 75rem;
+    }
+
+    .welcome-text {
+      width: 50rem;
+      height: 3rem;
     }
   }
 </style>
