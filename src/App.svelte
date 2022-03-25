@@ -5,6 +5,6 @@
 </script>
 
 <main class="global-wrapper">
-  <InitalPage />
-  <!-- <WelcomePage /> -->
+  <!-- <InitalPage /> -->
+  <WelcomePage />
 </main>

@@ -11,9 +11,15 @@
   </a>
   <a
     href="https://play.google.com/store?utm_source=na_Med&utm_medium=hasem&utm_content=Oct0120&utm_campaign=Evergreen&pcampaignid=MKT-EDR-na-us-1000189-Med-hasem-py-Evergreen-Oct0120-Text_Search_BKWS-id_101419_%7cEXA%7cONSEM_kwid_43700023142506860&gclsrc=ds&gclsrc=ds"
-    class="small-button download-button"
+    class="small-button download-button google-play-btn std-flex-row"
   >
-    <p class="gradient-text">G</p></a
+    <div class="google-play-logo-btn">
+      <span class="blue" />
+      <span class="red" />
+      <span class="green" />
+      <span class="yellow" />
+      <span class="google-shadow" />
+    </div></a
   >
 </section>
 
@@ -74,5 +80,49 @@
   .apple-logo-btn .bottom {
     transform: rotate(90deg);
     top: 1rem;
+  }
+  /* --------------- Google play button          */
+  .google-play-btn:hover {
+    box-shadow: 0.5px 0.5px 30px 0px #24ad468a, -0.5px -0.5px 30px 0px #24ad468a;
+  }
+  .google-play-logo-btn {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+  }
+  .google-play-logo-btn span {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+  }
+
+  .google-play-logo-btn:hover {
+    filter: drop-shadow(1px 1px 5px #24ad47);
+  }
+
+  .google-play-logo-btn .blue {
+    clip-path: polygon(55% 50%, 0 0, 0 100%);
+    background-color: #42a4ff;
+    z-index: 3;
+  }
+  .google-play-logo-btn .red {
+    clip-path: polygon(0% 0%, 0 100%, 75% 65%);
+    background-color: #ff4040;
+    z-index: 2;
+  }
+  .google-play-logo-btn .green {
+    clip-path: polygon(0% 0%, 0 100%, 75% 35%);
+    background-color: #24ad47;
+    z-index: 2;
+  }
+  .google-play-logo-btn .yellow {
+    clip-path: polygon(100% 50%, 75% 35%, 20% 50%, 75% 65%);
+    background-color: #ffd001;
+    z-index: 1;
   }
 </style>

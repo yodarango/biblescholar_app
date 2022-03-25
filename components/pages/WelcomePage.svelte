@@ -16,9 +16,9 @@
 <style>
   .plannet-earth {
     position: absolute;
-    width: 200%;
-    bottom: -20%;
-    left: -80%;
+    width: 800px;
+    bottom: -100px;
+    left: -300px;
     object-fit: contain;
     object-position: center;
     transform: rotate(-45deg);
