@@ -1,7 +1,4 @@
 <script>
-  // comps
-  import StandardButton from "../../triggers/buttons/standardButton.svelte";
-
   // props
   export let title = "";
   export let description = "";
@@ -11,11 +8,6 @@
 <div class="description-module-wrapper  std-flex-column std-flex-nowrap">
   <div class="title-wrapper"><h1 class="big-title">{title}</h1></div>
   <article class="description-wrapper"><p>{description}</p></article>
-  <StandardButton
-    text="Next"
-    withIcon={true}
-    icon="assets/images/icons/arrow.png"
-  />
   <div class="image-wrapper">
     <img draggable="false" src={imgSource} alt="mobile comments diagram" />
   </div>
@@ -40,10 +32,30 @@
   .title-wrapper h1 {
     text-shadow: 2rem 2rem 0.5rem var(--shadow-color);
   }
+
+  @keyframes textEntry {
+    0% {
+      color: transparent;
+      opacity: 0;
+      text-shadow: 0rem 0rem 0rem var(--shadow-color),
+        0px 0px 40px var(--font-color);
+      transform: scale(0.8);
+      filter: blur(2rem);
+    }
+    100% {
+      color: var(--font-color);
+      opacity: 1;
+      text-shadow: 2rem 2rem 0.5rem var(--shadow-color),
+        0px 0px 0.5px var(--font-color);
+      transform: scale(1);
+      filter: blur(0);
+    }
+  }
   .title-wrapper h1,
   .description-wrapper p {
     text-align: right;
     text-shadow: 1rem 1rem 0.2rem var(--shadow-color);
+    animation: textEntry 500ms ease-in;
   }
 
   .description-wrapper {

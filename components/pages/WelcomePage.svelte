@@ -1,15 +1,25 @@
 <script>
+  // core
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
   //comps
   import WelcomePageTop from "../fragmetns/welcomePageTop.svelte";
   import DownloadButtons from "../triggers/buttons/downloadButtons.svelte";
-  import StandardButton from "../triggers/buttons/standardButton.svelte";
 </script>
 
 <div class="main-wrapper">
   <WelcomePageTop />
   <DownloadButtons />
   <div class="button-wrapper std-flex-row">
-    <button class="std-button with-icon std-flex-row std-flex-nowrap"
+    <button
+      class="std-button with-icon std-flex-row std-flex-nowrap"
+      on:click={() =>
+        dispatch("renderNext", {
+          view: 2,
+          iconOffset: 0,
+          iconSrc: "assets/images/icons/bell.png",
+        })}
       >Start Tour<span
         style="background-image: url(assets/images/icons/arrow.png);"
       /></button
@@ -46,6 +56,10 @@
 
   .std-button.with-icon:hover {
     width: 16rem;
+  }
+
+  .std-button.with-icon:active span {
+    background-position: 1rem center;
   }
 
   @media (min-width: 750px) {

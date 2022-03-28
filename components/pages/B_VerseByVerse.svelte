@@ -7,7 +7,7 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Verse By Verse Comments";
+  const title = "Share Your Thoughts";
   const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
   const imgSource = "assets/images/Africa.png";
 
@@ -18,13 +18,13 @@
     if (scrollCount >= 2) {
       if (e.deltaY > 0) {
         dispatch("renderNext", {
-          view: 3,
-          iconOffset: 12.5,
+          view: 4,
+          iconOffset: 25,
           iconSrc: "assets/images/icons/bell.png",
         });
       } else {
         dispatch("renderNext", {
-          view: 1,
+          view: 2,
           iconOffset: 0,
           iconSrc: "assets/images/icons/bell.png",
         });

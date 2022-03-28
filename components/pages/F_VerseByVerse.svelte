@@ -7,7 +7,7 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Verse By Verse Comments";
+  const title = "Find Churches Near You";
   const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
   const imgSource = "assets/images/Africa.png";
 
@@ -18,14 +18,14 @@
     if (scrollCount >= 2) {
       if (e.deltaY > 0) {
         dispatch("renderNext", {
-          view: 3,
-          iconOffset: 12.5,
+          view: 8,
+          iconOffset: 75,
           iconSrc: "assets/images/icons/bell.png",
         });
       } else {
         dispatch("renderNext", {
-          view: 1,
-          iconOffset: 0,
+          view: 6,
+          iconOffset: 50,
           iconSrc: "assets/images/icons/bell.png",
         });
       }

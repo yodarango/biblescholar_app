@@ -1,9 +1,21 @@
 <script>
   // props
   export let iconSrc;
+  export let leftPx;
+
+  let windowWidth = window.innerWidth;
+
+  window.addEventListener("resize", () => {
+    windowWidth = window.innerWidth;
+
+    console.log(windowWidth);
+  });
 </script>
 
-<div class="navbar-link-wrapper">
+<div
+  class="navbar-link-wrapper"
+  style={windowWidth <= 1050 ? `left: ${leftPx}%` : `top: ${leftPx}vh`}
+>
   <div class="circle">
     <img
       draggable="false"
@@ -17,16 +29,19 @@
 
 <style>
   .navbar-link-wrapper {
-    position: relative;
-    width: 6rem;
-    height: 6rem;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 0;
+    top: 0;
+    transition: 300ms ease;
   }
   .circle {
     position: absolute;
-    width: 6em;
-    height: 6em;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    border: 0.5rem solid var(--secondary-color);
+    border: 0.3rem solid var(--secondary-color);
     background-color: #94939d;
     z-index: 2;
   }
@@ -49,8 +64,8 @@
   .tip,
   .tip:before,
   .tip:after {
-    width: 1.5em;
-    height: 1.5em;
+    width: 0.8em;
+    height: 0.8em;
     border-top-right-radius: 30%;
   }
   .tip {
@@ -65,10 +80,26 @@
   }
 
   .nav-link-icon {
-    width: 6em;
-    height: 6em;
-    transform: translate(-0.5em, -1em);
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translate(-0.5em, -0.5em);
     object-fit: contain;
     object-position: center;
+    animation: iconEntry 500ms ease;
+  }
+
+  @keyframes iconEntry {
+    0% {
+      width: 2rem;
+      height: 2rem;
+      transform: translate(-1em, -1em);
+      opacity: 0;
+    }
+    100% {
+      width: 4.5rem;
+      height: 4.5rem;
+      transform: translate(-0.5em, -0.5em);
+      opacity: 1;
+    }
   }
 </style>
