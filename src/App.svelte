@@ -7,22 +7,15 @@
   import AVerseByVerse from "../components/pages/A_VerseByVerse.svelte";
 
   // states
-  const initialPoints = [];
+  let currentPage = 1;
 
-  const mainWrapper = document.querySelector(".global-wrapper");
-
-  mainWrapper.addEventListener("wheel", callback, { passive: false });
-  const drag = (e) => {
-    initialPoints[0] = e.clientX;
-    initialPoints[1] = e.clientY;
-  };
-  const stopDrage = (e) => {
-    console.log(initialPoints);
-  };
+  // setTimeout(() => {
+  //   currentPage = 2;
+  // }, 13000);
 </script>
 
-<main class="global-wrapper" on:mousedown={drag} on:mouseup={stopDrage}>
-  <!-- <InitalPage /> -->
-  <!-- <WelcomePage /> -->
-  <AVerseByVerse />
+<main class="global-wrapper">
+  {#if currentPage === 100}<InitalPage />{/if}
+  {#if currentPage === 1}<WelcomePage />{/if}
+  {#if currentPage === 3}<AVerseByVerse />{/if}
 </main>

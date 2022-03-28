@@ -155,16 +155,37 @@ a:link {
 /* ----------------- buttons                                */
 .std-button {
   display: block;
-  width: 15rem;
+  min-width: 10rem;
   padding: var(--small-spacing);
-  background-color: var(--third-color);
+  background-image: linear-gradient(
+    45deg,
+    var(--graient-one),
+    var(--gradient-two)
+  );
   text-align: center;
-  border-radius: 0.5rem;
+  color: var(--font-color);
+  font: var(--button-font);
+  border-radius: 3rem;
   margin: var(--medium-spacing) auto;
-  transition: background-color 300ms ease-in;
-  box-shadow: inset 1.5px 1.5px 1px 1px var(--graient-one),
-    inset -1px -1px 3px 1px var(--gradient-two);
-  transition: 300ms;
+  transition: 300ms ease;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem var(--shadow-color);
+}
+
+.std-button:hover {
+  cursor: pointer;
+  background-size: 200% 100%;
+  animation: ButonBkgAnimation 500ms ease infinite;
+  animation-direction: alternate;
+  transform: scaleX(1.075);
+}
+
+@keyframes ButonBkgAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 .small-button {
@@ -174,6 +195,41 @@ a:link {
   box-shadow: 5px 5px 10px 2px var(--shadow-color),
     -0.5px -0.5px 1px 0.5px var(--shadow-color--light);
   border-radius: 0.5rem;
+}
+
+.std-button.with-icon {
+  transform: none;
+  display: flex;
+  transition: 300ms ease;
+}
+.std-button.with-icon:hover {
+  min-width: 12rem;
+}
+
+.std-button.with-icon:hover span {
+  animation: ShowIcon 1000ms ease;
+  display: block;
+}
+
+.std-button.with-icon span {
+  display: none;
+  width: 5rem;
+  height: 1.5rem;
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+@keyframes ShowIcon {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ----------------- text                                */

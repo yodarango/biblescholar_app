@@ -121,7 +121,7 @@
 
   @media (min-width: 750px) {
     .welcome-wrapper {
-      margin: 18rem auto var(--medium-spacing);
+      margin: 15rem auto var(--medium-spacing);
       max-width: 60rem;
     }
 
@@ -133,7 +133,6 @@
 
   @media (min-width: 1050px) {
     .welcome-wrapper {
-      margin: 20rem auto var(--medium-spacing);
       max-width: 75rem;
     }
 
