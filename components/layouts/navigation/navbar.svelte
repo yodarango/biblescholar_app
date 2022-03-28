@@ -47,13 +47,21 @@
     position: fixed;
     top: 3rem;
     left: 4%;
+    z-index: 5;
   }
 
-  @media (min-width: 1050px) {
+  @media (min-width: 950px) {
     .global-navigation--gradient {
       width: 2rem;
       height: 100vh;
       background-size: 100% 400%;
+    }
+
+    .global-navigation--links-wrapper {
+      height: 100vh;
+      width: 7rem;
+      top: 2rem;
+      left: 2.5rem;
     }
     @keyframes NavbarGradient {
       0% {

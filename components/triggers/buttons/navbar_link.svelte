@@ -7,14 +7,12 @@
 
   window.addEventListener("resize", () => {
     windowWidth = window.innerWidth;
-
-    console.log(windowWidth);
   });
 </script>
 
 <div
   class="navbar-link-wrapper"
-  style={windowWidth <= 1050 ? `left: ${leftPx}%` : `top: ${leftPx}vh`}
+  style={windowWidth <= 950 ? `left: ${leftPx}%` : `top: ${leftPx}vh`}
 >
   <div class="circle">
     <img
@@ -35,6 +33,7 @@
     left: 0;
     top: 0;
     transition: 300ms ease;
+    z-index: 5;
   }
   .circle {
     position: absolute;
@@ -102,4 +101,29 @@
       opacity: 1;
     }
   }
+
+  @media (min-width: 950px) {
+    .navbar-link-wrapper {
+      position: absolute;
+      width: 6rem;
+      height: 6rem;
+      left: 2rem;
+    }
+    .nav-link-icon {
+      width: 6.5rem;
+      height: 6.5rem;
+      transform: translate(0.3rem, 0.3rem);
+    }
+    .tip {
+      top: 1.5rem;
+      left: -4rem;
+      transform: rotate(-30deg) skewX(-30deg) scale(1, 0.866);
+    }
+  }
+
+  /* @media (min-width: 1300px) {
+    .navbar-link-wrapper {
+      left: -1vw;
+    }
+  } */
 </style>

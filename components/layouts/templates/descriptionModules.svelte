@@ -79,4 +79,7 @@
     object-fit: contain;
     object-position: center;
   }
+
+  @media (min-width: 1200px) {
+  }
 </style>
