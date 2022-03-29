@@ -81,5 +81,12 @@
   }
 
   @media (min-width: 1200px) {
+    .description-module-wrapper {
+      width: 100%;
+      height: calc(80% - 15rem);
+      margin: 15rem auto 0;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
   }
 </style>

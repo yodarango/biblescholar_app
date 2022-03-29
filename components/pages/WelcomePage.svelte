@@ -18,7 +18,7 @@
         dispatch("renderNext", {
           view: 2,
           iconOffset: 0,
-          iconSrc: "assets/images/icons/bell.png",
+          iconSrc: "assets/images/icons/chat_bubbles.png",
         })}
       >Start Tour<span
         style="background-image: url(assets/images/icons/arrow.png);"

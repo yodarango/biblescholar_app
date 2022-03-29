@@ -23,7 +23,6 @@
   // }, 13000);
 
   const renderNext = (e) => {
-    console.log(e);
     setTimeout(() => {
       currentPage = e.detail.view;
       currentIconOffset = e.detail.iconOffset;

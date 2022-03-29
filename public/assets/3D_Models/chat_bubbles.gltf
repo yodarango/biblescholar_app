@@ -1,0 +1,704 @@
+{
+    "asset": {
+        "copyright": "2020 (c) Adobe Inc.",
+        "generator": "Adobe Dimension - 3de52ae4ccc0c25be48106335282fae5a6a58dee",
+        "version": "2.0"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5126,
+            "count": 2399,
+            "type": "VEC3",
+            "max": [
+                0.05999999865889549,
+                0.11999999731779099,
+                0.05999999865889549
+            ],
+            "min": [
+                -0.05999999865889549,
+                0.0,
+                -0.05999999865889549
+            ]
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 2399,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 2399,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 3,
+            "componentType": 5125,
+            "count": 13536,
+            "type": "SCALAR",
+            "max": [
+                2398.0
+            ],
+            "min": [
+                0.0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "componentType": 5126,
+            "count": 13824,
+            "type": "VEC3",
+            "max": [
+                0.09999999403953552,
+                0.19999998807907105,
+                0.09999999403953552
+            ],
+            "min": [
+                -0.09999999403953552,
+                0.0,
+                -0.09999999403953552
+            ]
+        },
+        {
+            "bufferView": 5,
+            "componentType": 5126,
+            "count": 13824,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "componentType": 5126,
+            "count": 13824,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 7,
+            "componentType": 5125,
+            "count": 13824,
+            "type": "SCALAR",
+            "max": [
+                13823.0
+            ],
+            "min": [
+                0.0
+            ]
+        },
+        {
+            "bufferView": 8,
+            "componentType": 5126,
+            "count": 11076,
+            "type": "VEC3",
+            "max": [
+                0.09999999403953552,
+                0.19999998807907105,
+                0.09999999403953552
+            ],
+            "min": [
+                -0.09999999403953552,
+                0.0,
+                -0.09999999403953552
+            ]
+        },
+        {
+            "bufferView": 9,
+            "componentType": 5126,
+            "count": 11076,
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 10,
+            "componentType": 5126,
+            "count": 11076,
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 11,
+            "componentType": 5125,
+            "count": 11076,
+            "type": "SCALAR",
+            "max": [
+                11075.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 28788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 28788,
+            "byteLength": 28788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 57576,
+            "byteLength": 19192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 76768,
+            "byteLength": 54144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 130912,
+            "byteLength": 165888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 296800,
+            "byteLength": 165888,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 462688,
+            "byteLength": 110592,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 573280,
+            "byteLength": 55296,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 628576,
+            "byteLength": 132912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 761488,
+            "byteLength": 132912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 894400,
+            "byteLength": 88608,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 983008,
+            "byteLength": 44304,
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1027312,
+            "uri": "chat_bubbles_binary.bin"
+        }
+    ],
+    "cameras": [
+        {
+            "perspective": {
+                "znear": 0.000010000000656873454,
+                "yfov": 0.6024156808853149,
+                "zfar": 2.0,
+                "aspectRatio": 1.3333333730697632
+            },
+            "type": "perspective",
+            "name": "render_camera"
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.028999999165534974
+            },
+            "name": "Plastic 2",
+            "doubleSided": true
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.9473065733909607,
+                    0.9473065733909607,
+                    0.9473065733909607,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            },
+            "name": "Matte 2",
+            "doubleSided": true
+        }
+    ],
+    "meshes": [
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_CONE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 5,
+                        "POSITION": 4,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_CUBE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 8,
+                        "NORMAL": 9,
+                        "TEXCOORD_0": 10
+                    },
+                    "indices": 11,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_SPHERE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 1,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 0
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_CONE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 5,
+                        "POSITION": 4,
+                        "TEXCOORD_0": 6
+                    },
+                    "indices": 7,
+                    "material": 1
+                }
+            ]
+        },
+        {
+            "name": "PROCEDURAL_MESHES_CUBE#",
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 8,
+                        "NORMAL": 9,
+                        "TEXCOORD_0": 10
+                    },
+                    "indices": 11,
+                    "material": 1
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "translation": [
+                0.15425989031791688,
+                0.1603507399559021,
+                0.48285818099975588
+            ],
+            "rotation": [
+                -0.036983828991651538,
+                0.12498442828655243,
+                0.004662293940782547,
+                0.9914581775665283
+            ],
+            "camera": 0,
+            "name": "render_camera_n3d"
+        },
+        {
+            "children": [
+                2,
+                6,
+                7
+            ],
+            "translation": [
+                0.17996680736541749,
+                0.05585367605090141,
+                -0.15863516926765443
+            ],
+            "rotation": [
+                0.0,
+                0.5446391105651856,
+                0.0,
+                0.838670551776886
+            ],
+            "scale": [
+                1.0000005960464478,
+                0.9999994039535523,
+                1.0000007152557374
+            ],
+            "name": "Chat Bubble"
+        },
+        {
+            "children": [
+                3,
+                4,
+                5
+            ],
+            "translation": [
+                0.005625514779239893,
+                0.03754522278904915,
+                -0.22954459488391877
+            ],
+            "rotation": [
+                0.0,
+                0.9563047289848328,
+                0.0,
+                0.2923717796802521
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0000001192092896,
+                1.0
+            ],
+            "name": "Spheres"
+        },
+        {
+            "translation": [
+                -0.07047758251428604,
+                0.10133740305900574,
+                -0.0537293404340744
+            ],
+            "rotation": [
+                0.31716403365135195,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429722011089326,
+                0.21429720520973206,
+                0.21429717540740968
+            ],
+            "mesh": 0,
+            "name": "Sphere"
+        },
+        {
+            "translation": [
+                0.0185418501496315,
+                0.09528694301843643,
+                -0.11205372214317322
+            ],
+            "rotation": [
+                0.3171640634536743,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429724991321565,
+                0.21429719030857087,
+                0.21429719030857087
+            ],
+            "mesh": 1,
+            "name": "Sphere 3"
+        },
+        {
+            "translation": [
+                -0.023635417222976686,
+                0.09815364331007004,
+                -0.08441973477602005
+            ],
+            "rotation": [
+                0.3171640634536743,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429724991321565,
+                0.21429719030857087,
+                0.21429719030857087
+            ],
+            "mesh": 2,
+            "name": "Sphere 2"
+        },
+        {
+            "translation": [
+                0.05170177295804024,
+                0.07282201945781708,
+                -0.17271476984024049
+            ],
+            "rotation": [
+                0.041111983358860019,
+                0.07157765328884125,
+                0.9965825080871582,
+                0.0031231045722961427
+            ],
+            "scale": [
+                0.26284605264663699,
+                0.17821359634399415,
+                0.1365448236465454
+            ],
+            "mesh": 3,
+            "name": "Cone"
+        },
+        {
+            "translation": [
+                0.0,
+                0.07211247086524964,
+                -0.17479845881462098
+            ],
+            "scale": [
+                0.9431136250495911,
+                0.647706925868988,
+                0.17064346373081208
+            ],
+            "mesh": 4,
+            "name": "Cube"
+        },
+        {
+            "children": [
+                9,
+                13,
+                14
+            ],
+            "translation": [
+                -0.1236959919333458,
+                -0.03754521533846855,
+                -0.23558849096298219
+            ],
+            "rotation": [
+                0.0,
+                0.9563047289848328,
+                0.0,
+                -0.2923717796802521
+            ],
+            "scale": [
+                1.0000001192092896,
+                0.9999998807907105,
+                1.0000001192092896
+            ],
+            "name": "Chat Bubble"
+        },
+        {
+            "children": [
+                10,
+                11,
+                12
+            ],
+            "translation": [
+                0.029190825298428537,
+                0.03754521906375885,
+                -0.2644816040992737
+            ],
+            "rotation": [
+                0.0,
+                0.9563047289848328,
+                0.0,
+                0.2923717796802521
+            ],
+            "scale": [
+                0.9999999403953552,
+                1.0000001192092896,
+                0.9999999403953552
+            ],
+            "name": "Spheres"
+        },
+        {
+            "translation": [
+                -0.07047758251428604,
+                0.10133740305900574,
+                -0.0537293404340744
+            ],
+            "rotation": [
+                0.31716403365135195,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429722011089326,
+                0.21429720520973206,
+                0.21429717540740968
+            ],
+            "mesh": 5,
+            "name": "Sphere"
+        },
+        {
+            "translation": [
+                0.0185418501496315,
+                0.09528694301843643,
+                -0.11205372214317322
+            ],
+            "rotation": [
+                0.3171640634536743,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429724991321565,
+                0.21429719030857087,
+                0.21429719030857087
+            ],
+            "mesh": 6,
+            "name": "Sphere 3"
+        },
+        {
+            "translation": [
+                -0.023635417222976686,
+                0.09815364331007004,
+                -0.08441973477602005
+            ],
+            "rotation": [
+                0.3171640634536743,
+                -0.3547271192073822,
+                -0.6293501257896423,
+                0.6144054532051086
+            ],
+            "scale": [
+                0.21429724991321565,
+                0.21429719030857087,
+                0.21429719030857087
+            ],
+            "mesh": 7,
+            "name": "Sphere 2"
+        },
+        {
+            "translation": [
+                0.05170177295804024,
+                0.07282201945781708,
+                -0.17271476984024049
+            ],
+            "rotation": [
+                0.041111983358860019,
+                0.07157765328884125,
+                0.9965825080871582,
+                0.0031231045722961427
+            ],
+            "scale": [
+                0.26284605264663699,
+                0.17821359634399415,
+                0.1365448236465454
+            ],
+            "mesh": 8,
+            "name": "Cone"
+        },
+        {
+            "translation": [
+                0.0,
+                0.07211247086524964,
+                -0.17479845881462098
+            ],
+            "scale": [
+                0.9431136250495911,
+                0.647706925868988,
+                0.17064346373081208
+            ],
+            "mesh": 9,
+            "name": "Cube"
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1,
+                8
+            ],
+            "name": "scene"
+        }
+    ],
+    "scene": 0
+}
