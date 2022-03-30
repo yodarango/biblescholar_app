@@ -4,19 +4,19 @@
   const dispatch = createEventDispatcher();
 
   // three.js
-  import {
-    Scene,
-    PerspectiveCamera,
-    WebGLRenderer,
-    HemisphereLight,
-    AmbientLight,
-    PointLight,
-    BoxGeometry,
-    MeshStandardMaterial,
-    Mesh,
-    Color,
-  } from "three";
-  import { GLTFLoader } from "../../helpers/GLTFLoader";
+  // import {
+  //   Scene,
+  //   PerspectiveCamera,
+  //   WebGLRenderer,
+  //   HemisphereLight,
+  //   AmbientLight,
+  //   PointLight,
+  //   BoxGeometry,
+  //   MeshStandardMaterial,
+  //   Mesh,
+  //   Color,
+  // } from "three";
+  // import { GLTFLoader } from "../../helpers/GLTFLoader";
 
   // components
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
@@ -29,6 +29,8 @@
   // make sure that the user has scrolled the wheel at least three times
   let scrollCount = 0;
   const checkScrollingDistance = (e) => {
+    console.log(e);
+    console.log(navigator.userAgent);
     scrollCount += 1;
     if (scrollCount >= 2) {
       if (e.deltaY > 0) {

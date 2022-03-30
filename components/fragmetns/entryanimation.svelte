@@ -6,7 +6,7 @@
 
     console.log(currInterval);
     cleanupInterval();
-  }, 3000);
+  }, 2000);
 
   const cleanupInterval = () => {
     currInterval == 3 ? clearInterval(introAnimation) : null;
@@ -40,7 +40,7 @@
     text-align: center;
     font: var(--title-font);
     opacity: 0;
-    animation: IntroText 3s ease-in-out;
+    animation: IntroText 2000ms ease-in-out;
   }
 
   .logo {

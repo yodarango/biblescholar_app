@@ -14,25 +14,32 @@
   import GVerseByVerse from "../components/pages/G_VerseByVerse.svelte";
 
   // states
-  let currentPage = 1;
+  let currentPage = 0;
   let currentIconOffset = 0;
-  let iconSrc = "assets/images/icons/bell.png";
+  let iconSrc = "assets/images/icons/chat_bubbles.png";
 
-  // setTimeout(() => {
-  //   currentPage = 1;
-  // }, 13000);
+  setTimeout(() => {
+    currentPage = 1;
+  }, 10000);
+
+  let canRenderNext = true;
 
   const renderNext = (e) => {
-    setTimeout(() => {
+    if (canRenderNext) {
       currentPage = e.detail.view;
       currentIconOffset = e.detail.iconOffset;
       iconSrc = e.detail.iconSrc;
-    }, 250);
+
+      canRenderNext = false;
+      setTimeout(() => {
+        canRenderNext = true;
+      }, 1500);
+    }
   };
 </script>
 
 <main class="global-wrapper">
-  {#if currentPage >= 1}<NavBar {iconSrc} leftPx={currentIconOffset} />{/if}
+  {#if currentPage >= 2}<NavBar {iconSrc} leftPx={currentIconOffset} />{/if}
   {#if currentPage === 0}<InitalPage />{/if}
   {#if currentPage === 1}<WelcomePage on:renderNext={renderNext} />{/if}
   {#if currentPage === 2}<AVerseByVerse on:renderNext={renderNext} />{/if}

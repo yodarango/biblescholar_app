@@ -11,7 +11,7 @@
   const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
   const imgSource = "assets/images/bkgs/bulb_big.png";
 
-  // make sure that the user has scrolled the wheel at least three times
+  // ------------------ make sure that the user has scrolled the wheel at least three times
   let scrollCount = 0;
   const checkScrollingDistance = (e) => {
     scrollCount += 1;
@@ -20,22 +20,31 @@
         dispatch("renderNext", {
           view: 4,
           iconOffset: 25,
-          iconSrc: "assets/images/icons/bell.png",
+          iconSrc: "assets/images/icons/quote.png",
         });
       } else {
         dispatch("renderNext", {
           view: 2,
           iconOffset: 0,
-          iconSrc: "assets/images/icons/bell.png",
+          iconSrc: "assets/images/icons/chat_bubbles.png",
         });
       }
       scrollCount = 0;
     }
   };
+
+  // --------------- masure media query
+  let mediaWidth = window.innerWidth;
+  window.addEventListener("resize", () => (mediaWidth = window.innerWidth));
 </script>
 
 <div class="main-wrapper" on:wheel|nonpassive={checkScrollingDistance}>
-  <DescriptionModules {title} {description} {imgSource} />
+  <DescriptionModules
+    {title}
+    {description}
+    {imgSource}
+    additionalStyles={mediaWidth >= 750 ? `width: 80%;` : `width: 100%;`}
+  />
 </div>
 
 <style>

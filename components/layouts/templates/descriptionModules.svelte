@@ -1,15 +1,26 @@
 <script>
+  // components
+  import EntryCourtain from "../../fragmetns/entryCourtain.svelte";
+
   // props
   export let title = "";
   export let description = "";
   export let imgSource = "";
+  export let additionalStyles = "";
 </script>
 
 <div class="description-module-wrapper  std-flex-column std-flex-nowrap">
+  <EntryCourtain />
   <div class="title-wrapper"><h1 class="big-title">{title}</h1></div>
   <article class="description-wrapper"><p>{description}</p></article>
   <div class="image-wrapper">
-    <img draggable="false" src={imgSource} alt="mobile comments diagram" />
+    <img
+      draggable="false"
+      src={imgSource}
+      alt="mobile comments diagram"
+      class="bkg-3d"
+      style={`${additionalStyles}`}
+    />
   </div>
 </div>
 
@@ -55,7 +66,7 @@
   .description-wrapper p {
     text-align: right;
     text-shadow: 1rem 1rem 0.2rem var(--shadow-color);
-    animation: textEntry 500ms ease-in;
+    animation: textEntry 1000ms ease-in;
   }
 
   .description-wrapper {
@@ -67,9 +78,9 @@
   }
 
   .image-wrapper {
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    margin: auto;
     z-index: 1;
   }
 
@@ -78,6 +89,56 @@
     display: block;
     object-fit: contain;
     object-position: center;
+    max-width: 70rem;
+  }
+
+  .bkg-3d {
+    animation: imageIntro 1000ms ease;
+  }
+
+  @keyframes imageIntro {
+    0% {
+      filter: blur(10rem);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes imageIntroDesktop {
+    0% {
+      filter: blur(10rem);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .image-wrapper {
+      width: 80%;
+      transform: translateY(-8rem);
+    }
+
+    .image-wrapper img {
+      opacity: 0.5;
+    }
+
+    .bkg-3d {
+      animation: imageIntroDesktop 1000ms ease 500ms;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    .image-wrapper {
+      width: 80%;
+      margin: auto auto auto 0;
+      transform: translate(-4rem, -30rem);
+    }
   }
 
   @media (min-width: 1200px) {
