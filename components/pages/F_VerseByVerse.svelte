@@ -32,10 +32,19 @@
       scrollCount = 0;
     }
   };
+
+  // --------------- masure media query
+  let mediaWidth = window.innerWidth;
+  window.addEventListener("resize", () => (mediaWidth = window.innerWidth));
 </script>
 
 <div class="main-wrapper" on:wheel|nonpassive={checkScrollingDistance}>
-  <DescriptionModules {title} {description} {imgSource} />
+  <DescriptionModules
+    {title}
+    {description}
+    {imgSource}
+    additionalStyles={mediaWidth >= 750 ? `transform: translateY(10rem)` : ""}
+  />
 </div>
 
 <style>

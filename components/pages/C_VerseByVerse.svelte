@@ -44,7 +44,7 @@
     {title}
     {description}
     {imgSource}
-    additionalStyles={mediaWidth >= 750 ? `width: 80%;` : `width: 100%;`}
+    additionalStyles={mediaWidth >= 750 ? `width: 80%;` : `width: 80%;`}
   />
 </div>
 

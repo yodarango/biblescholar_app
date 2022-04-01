@@ -121,7 +121,7 @@
   @media (min-width: 750px) {
     .image-wrapper {
       width: 80%;
-      transform: translateY(-8rem);
+      transform: translateY(-20rem);
     }
 
     .image-wrapper img {
@@ -129,7 +129,7 @@
     }
 
     .bkg-3d {
-      animation: imageIntroDesktop 1000ms ease 500ms;
+      animation: imageIntroDesktop 1000ms ease;
     }
   }
 

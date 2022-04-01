@@ -12,6 +12,9 @@
 </div>
 
 <style>
+  :root {
+    --animation-speed: 500ms;
+  }
   .courtain {
     width: 100%;
     height: 100%;
@@ -23,7 +26,7 @@
 
   .courtain span {
     display: block;
-    height: 10vh;
+    height: 10.2vh;
     width: 110vw;
     border-radius: 10vh;
     position: absolute;
@@ -33,54 +36,54 @@
   .one {
     top: 0;
     left: -111vw;
-    animation: CurtainIntroLeft 1000ms linear;
+    animation: CurtainIntroLeft var(--animation-speed) linear;
   }
   .two {
     top: 10vh;
     right: -111vw;
-    animation: CurtainIntroRight 1000ms linear;
+    animation: CurtainIntroRight var(--animation-speed) linear;
   }
   .three {
     top: 20vh;
     left: -111vw;
-    animation: CurtainIntroLeft 1000ms linear;
+    animation: CurtainIntroLeft var(--animation-speed) linear;
   }
 
   .four {
     top: 30vh;
     right: -111vw;
-    animation: CurtainIntroRight 1000ms linear;
+    animation: CurtainIntroRight var(--animation-speed) linear;
   }
   .five {
     top: 40vh;
     left: -111vw;
-    animation: CurtainIntroLeft 1000ms linear;
+    animation: CurtainIntroLeft var(--animation-speed) linear;
   }
   .six {
     top: 50vh;
     right: -111vw;
-    animation: CurtainIntroRight 1000ms linear;
+    animation: CurtainIntroRight var(--animation-speed) linear;
   }
   .seven {
     top: 60vh;
     left: -111vw;
-    animation: CurtainIntroLeft 1000ms linear;
+    animation: CurtainIntroLeft var(--animation-speed) linear;
   }
   .eight {
     top: 70vh;
     right: -111vw;
-    animation: CurtainIntroRight 1000ms linear;
+    animation: CurtainIntroRight var(--animation-speed) linear;
   }
 
   .nine {
     top: 80vh;
     left: -111vw;
-    animation: CurtainIntroLeft 1000ms linear;
+    animation: CurtainIntroLeft var(--animation-speed) linear;
   }
   .ten {
     top: 90vh;
     right: -111vw;
-    animation: CurtainIntroRight 1000ms linear;
+    animation: CurtainIntroRight var(--animation-speed) linear;
   }
 
   @keyframes CurtainIntroLeft {
@@ -89,6 +92,9 @@
     }
     50% {
       left: -30vw;
+    }
+    80% {
+      left: -60vw;
     }
     100% {
       left: -111vw;
@@ -101,6 +107,9 @@
     }
     50% {
       right: -30vw;
+    }
+    80% {
+      right: -60vw;
     }
     100% {
       right: -111vw;
