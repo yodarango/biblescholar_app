@@ -11,6 +11,12 @@
   const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
   const imgSource = "assets/images/bkgs/churches_big.png";
 
+  // render next component on mobile
+  const renderNextMobile = () => {
+    scrollCount = 3;
+    checkScrollingDistance({ deltaY: 1 });
+  };
+
   // make sure that the user has scrolled the wheel at least three times
   let scrollCount = 0;
   const checkScrollingDistance = (e) => {
@@ -43,12 +49,10 @@
     {title}
     {description}
     {imgSource}
+    on:renderNextMobile={renderNextMobile}
     additionalStyles={mediaWidth >= 750 ? `transform: translateY(10rem)` : ""}
   />
 </div>
 
 <style>
-  .main-wrapper {
-    height: 100%;
-  }
 </style>

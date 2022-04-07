@@ -1,15 +1,24 @@
-<div class="courtain">
-  <span class="one" />
-  <span class="two" />
-  <span class="three" />
-  <span class="four" />
-  <span class="five" />
-  <span class="six" />
-  <span class="seven" />
-  <span class="eight" />
-  <span class="nine" />
-  <span class="ten" />
-</div>
+<script>
+  let renderCourtain = true;
+  setTimeout(() => {
+    renderCourtain = false;
+  }, 800);
+</script>
+
+{#if renderCourtain}
+  <div class="courtain">
+    <span class="one" />
+    <span class="two" />
+    <span class="three" />
+    <span class="four" />
+    <span class="five" />
+    <span class="six" />
+    <span class="seven" />
+    <span class="eight" />
+    <span class="nine" />
+    <span class="ten" />
+  </div>
+{/if}
 
 <style>
   :root {
@@ -21,7 +30,7 @@
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
   }
 
   .courtain span {

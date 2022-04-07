@@ -1,6 +1,7 @@
-<section class="std-flex-row std-flex--nowrap buttons-wrapper">
-  <a
-    href="https://apps.apple.com/us/app/girlspring/id1520838902"
+<section class="std-flex-row std-flex--wrap buttons-wrapper">
+  <h5 class="heading-text">Coming Soon!</h5>
+  <button
+    data-href="https://apps.apple.com/us/app/girlspring/id1520838902"
     class="small-button download-button apple-btn std-flex-row std-flex--nowrap"
   >
     <div class="apple-logo-btn">
@@ -9,8 +10,8 @@
       <span class="left" />
     </div>
     <span class="app-store-btn-text">App Store</span>
-  </a>
-  <a
+  </button>
+  <button
     href="https://play.google.com/store?utm_source=na_Med&utm_medium=hasem&utm_content=Oct0120&utm_campaign=Evergreen&pcampaignid=MKT-EDR-na-us-1000189-Med-hasem-py-Evergreen-Oct0120-Text_Search_BKWS-id_101419_%7cEXA%7cONSEM_kwid_43700023142506860&gclsrc=ds&gclsrc=ds"
     class="small-button download-button google-play-btn std-flex-row std-flex--nowrap"
   >
@@ -22,7 +23,7 @@
       <span class="google-shadow" />
     </div>
     <span class="google-play-btn-text">Play Store</span>
-  </a>
+  </button>
 </section>
 
 <style>
@@ -33,6 +34,12 @@
     margin: 10rem 0 var(--large-spacing) auto;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .heading-text {
+    width: 100%;
+    text-align: center;
+    color: var(--fourth-color);
   }
 
   .download-button {
@@ -49,6 +56,7 @@
   .google-play-btn-text {
     font: var(--button-font);
     font-size: 1.5rem;
+    color: var(--font-color);
     display: none;
     margin-left: var(--xsmall-spacing);
     animation: ButtonText 300ms ease;
@@ -153,10 +161,11 @@
 
   @media (min-width: 750px) {
     .buttons-wrapper {
-      position: relative;
+      position: fixed;
+      bottom: 10rem;
+      right: var(--xlarge-spacing);
       z-index: 3;
       width: 30rem;
-      margin: 10rem var(--xlarge-spacing) var(--large-spacing) auto;
     }
 
     .small-button:hover {
@@ -180,6 +189,14 @@
         opacity: 1;
         transform: none;
       }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .buttons-wrapper {
+      position: fixed;
+      bottom: 15rem;
+      right: 15rem;
     }
   }
 </style>

@@ -1,18 +1,40 @@
 <script>
   // components
   import EntryCourtain from "../../fragmetns/entryCourtain.svelte";
+  import StandardButton from "../../triggers/buttons/standardButton.svelte";
 
   // props
   export let title = "";
   export let description = "";
   export let imgSource = "";
   export let additionalStyles = "";
+
+  // -------- check whther the user is in mobile
+  const UA = navigator.userAgent;
+  const mobile =
+    /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+      UA
+    );
+
+  console.log("is user on mobile? ", mobile);
 </script>
 
 <div class="description-module-wrapper  std-flex-column std-flex-nowrap">
   <EntryCourtain />
-  <div class="title-wrapper"><h1 class="big-title">{title}</h1></div>
+  <div class="title-wrapper">
+    <h1 class={`${!mobile ? "big-title-gradient" : ""} big-title`}>
+      {title}
+    </h1>
+  </div>
   <article class="description-wrapper"><p>{description}</p></article>
+  {#if mobile}
+    <StandardButton
+      withIcon="true"
+      icon={"/assets/images/icons/arrow.png"}
+      on:renderNextMobile
+      text="Next"
+    />
+  {/if}
   <div class="image-wrapper">
     <img
       draggable="false"
@@ -22,13 +44,23 @@
       style={`${additionalStyles}`}
     />
   </div>
+  <!-- <img
+    scr="/assets/images/iphone.png"
+    alt="iphone 12"
+    class="iphone-display"
+  /> -->
+  <div class="iphone-display-wrapper">
+    <div class="iphone-display up" />
+    <div class="iphone-display down" />
+  </div>
 </div>
 
 <style>
   .description-module-wrapper {
+    position: relative;
     width: 100%;
     height: calc(80% - 15rem);
-    margin: 15rem auto 0;
+    margin: 8rem auto 0;
     align-items: flex-end;
     justify-content: flex-start;
   }
@@ -78,10 +110,12 @@
   }
 
   .image-wrapper {
-    position: relative;
+    position: absolute;
     width: 100%;
     margin: auto;
-    z-index: 1;
+    z-index: -1;
+    top: 10rem;
+    opacity: 0.3;
   }
 
   .image-wrapper img {
@@ -118,10 +152,42 @@
     }
   }
 
+  /* ------------------- ipphone model ------------------------- */
+  .iphone-display-wrapper {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    transform: translateY(-8rem);
+  }
+
+  .iphone-display {
+    background-image: url("/assets/images/iphone_standing.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 33rem;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+  }
+
+  .iphone-display.up {
+    background-position: -8rem center;
+    z-index: 0;
+  }
+
+  .iphone-display.down {
+    z-index: 1;
+    height: 35rem;
+    background-size: 77%;
+    background-position: 2rem 10rem;
+    background-image: url("/assets/images/iphone_laying.png");
+  }
+
   @media (min-width: 750px) {
     .image-wrapper {
       width: 80%;
-      transform: translateY(-20rem);
+      /* transform: translateY(-20rem); */
     }
 
     .image-wrapper img {
@@ -137,7 +203,7 @@
     .image-wrapper {
       width: 80%;
       margin: auto auto auto 0;
-      transform: translate(-4rem, -30rem);
+      /* transform: translate(-4rem, -30rem); */
     }
   }
 

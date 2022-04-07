@@ -15,7 +15,7 @@
 <style>
   .global-navigation--gradient {
     width: 100vw;
-    height: 1rem;
+    height: 2rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@
     height: 5rem;
     display: block;
     position: fixed;
-    top: 3rem;
+    top: 4rem;
     left: 4%;
     z-index: 5;
   }

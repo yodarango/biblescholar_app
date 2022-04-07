@@ -66,28 +66,40 @@
     .button-wrapper {
       width: 30rem;
       margin: 0 0 0 auto;
+      position: fixed;
+      bottom: 5rem;
+      right: 8rem;
     }
+    .button-wrapper .std-button.with-icon {
+      margin: var(--medium-spacing) 0 var(--medium-spacing) auto;
+      width: 18rem;
+    }
+
     .std-button.with-icon {
       max-height: 4.6rem;
       margin: var(--medium-spacing) auto;
     }
 
     .std-button.with-icon:hover {
-      width: 18rem;
+      width: 19rem;
     }
   }
 
   @media (min-width: 1050px) {
     .button-wrapper {
-      margin: 0 var(--xlarge-spacing) var(--large-spacing) auto;
-    }
-    .std-button.with-icon {
-      width: 16rem;
-      max-height: 5.2rem;
+      bottom: 5rem;
+      right: 15rem;
     }
 
-    .std-button.with-icon:hover {
-      width: 19rem;
+    .std-button.with-icon {
+      max-height: 5.2rem;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .button-wrapper {
+      bottom: 10rem;
+      right: 20rem;
     }
   }
 </style>
