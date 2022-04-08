@@ -40,7 +40,7 @@
 
 <div>
   {#if currentPage >= 2}<NavBar {iconSrc} leftPx={currentIconOffset} />{/if}
-  {#if currentPage === 20}<InitalPage />{/if}
+  {#if currentPage === 0}<InitalPage />{/if}
   {#if currentPage === 1}<WelcomePage on:renderNext={renderNext} />{/if}
   {#if currentPage === 2}<AVerseByVerse on:renderNext={renderNext} />{/if}
   {#if currentPage === 3}<BVerseByVerse on:renderNext={renderNext} />{/if}

@@ -33,6 +33,12 @@
 <style>
   .animation-wrapper {
     width: 100%;
+    position: fixed;
+    top: calc(50vh - 2rem);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
   }
 
   .intro-text {
