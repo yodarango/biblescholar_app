@@ -271,6 +271,20 @@ a:link {
   font: calc(var(--title-font) + 0.3);
 }
 
+/* ------------------------ NOT FOUND PAGE --------------------- */
+.not-found-wrapper {
+  width: 90%;
+  max-width: 60rem;
+  margin: 35vh auto 0;
+}
+
+.not-found-wrapper img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto var(--xlarge-spacing);
+}
+
 /****************************************  IPAD BREAKPOINT *********************************** */
 
 @media (min-width: 750px) {

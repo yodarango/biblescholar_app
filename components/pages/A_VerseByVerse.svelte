@@ -7,7 +7,7 @@
 
   // props
   const title = "Verse Commentaries";
-  const description = `See what others have to say about a specific verse and join them by sharing your own commentaries on a verse by vser basis also`;
+  const description = `See what others have to say about a specific verse and join them by also sharing your own commentaries on a verse by verse basis`;
   const imgSource = "assets/images/bkgs/chat_bubbles_big.png";
 
   // render next component on mobile

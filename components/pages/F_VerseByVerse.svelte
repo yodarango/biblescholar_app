@@ -8,7 +8,7 @@
 
   // props
   const title = "Find 100's Of Locations";
-  const description = `Search hundreds of locations by state, city, or zip. You can find helpful information as times of service, driving direction, websote, and more `;
+  const description = `Search hundreds of locations by state, city, or zip. You can find helpful information as times of service, driving directions, website, and more `;
   const imgSource = "assets/images/bkgs/churches_big.png";
 
   // render next component on mobile

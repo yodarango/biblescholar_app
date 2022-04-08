@@ -8,7 +8,7 @@
 
   // props
   const title = "Browse Tons Of Content";
-  const description = `From preachings, to podcast channels, websites, articles and more; Search the database for any kind of content you desire`;
+  const description = `From preachings, to podcast channels, websites, articles and more. Search the database for any kind of content you desire`;
   const imgSource = "assets/images/bkgs/media_content_big.png";
 
   // render next component on mobile

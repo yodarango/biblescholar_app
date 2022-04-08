@@ -8,7 +8,7 @@
 
   // props
   const title = "Upload Sermon Notes";
-  const description = `We are a body and we all benefit from each other's ministry. Upload your sermon notes to help, eancourage and inspire the community`;
+  const description = `We are a body and we all benefit from each other's ministry. Upload your sermon notes to help, encourage and inspire the community`;
   const imgSource = "assets/images/bkgs/sermons_big.png";
 
   // render next component on mobile
