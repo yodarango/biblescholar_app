@@ -33,6 +33,7 @@
       icon={"/assets/images/icons/arrow.png"}
       on:renderNextMobile
       text="Next"
+      addStyles={"position: relative; z-index: 2;"}
     />
   {/if}
   <div class="image-wrapper">
