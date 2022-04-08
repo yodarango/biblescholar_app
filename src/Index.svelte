@@ -14,13 +14,13 @@
   import GVerseByVerse from "../components/pages/G_VerseByVerse.svelte";
 
   // states
-  let currentPage = 2;
+  let currentPage = 0;
   let currentIconOffset = 0;
   let iconSrc = "assets/images/icons/chat_bubbles.png";
 
-  //   setTimeout(() => {
-  //     currentPage = 1;
-  //   }, 10000);
+  setTimeout(() => {
+    currentPage = 1;
+  }, 10000);
 
   let canRenderNext = true;
 
