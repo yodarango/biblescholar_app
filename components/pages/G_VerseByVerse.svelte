@@ -7,8 +7,8 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "See Content By Others on 24 Hour Basis";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const title = "What's Going on";
+  const description = `See what everyone has shared in the last 24 hours as well as exclusive daily content by differnet collaborators`;
   const imgSource = "assets/images/bkgs/last_24_big.png";
 
   // render next component on mobile

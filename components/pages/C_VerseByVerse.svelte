@@ -7,8 +7,8 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Create Quotes";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const title = "Quotes Are Awesome";
+  const description = `Everyone loves a good quote. They are inspirational, easy to remember, and concise enough to get a point across in just a few words. Let the community see yours`;
   const imgSource = "assets/images/bkgs/quotes.png";
 
   // render next component on mobile
@@ -42,7 +42,6 @@
   // --------------- masure media query
   let mediaWidth = window.innerWidth;
   window.addEventListener("resize", () => (mediaWidth = window.innerWidth));
-  console.log(mediaWidth);
 </script>
 
 <div class="main-wrapper" on:wheel|nonpassive={checkScrollingDistance}>
@@ -51,7 +50,9 @@
     {description}
     {imgSource}
     on:renderNextMobile={renderNextMobile}
-    additionalStyles={mediaWidth >= 750 ? `transform: translateY(10rem)` : ""}
+    additionalStyles={mediaWidth >= 750
+      ? `transform: translate(5rem, -5rem); width: 80%;`
+      : ""}
   />
 </div>
 

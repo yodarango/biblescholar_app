@@ -7,8 +7,8 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Find Churches Near You";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const title = "Find 100's Of Locations";
+  const description = `Search hundreds of locations by state, city, or zip. You can find helpful information as times of service, driving direction, websote, and more `;
   const imgSource = "assets/images/bkgs/churches_big.png";
 
   // render next component on mobile
@@ -50,7 +50,9 @@
     {description}
     {imgSource}
     on:renderNextMobile={renderNextMobile}
-    additionalStyles={mediaWidth >= 750 ? `transform: translateY(10rem)` : ""}
+    additionalStyles={mediaWidth >= 750
+      ? `transform: translate(-5rem, 0rem)`
+      : ""}
   />
 </div>
 

@@ -7,8 +7,8 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Submit Your Sermon Notes";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const title = "Upload Sermon Notes";
+  const description = `We are a body and we all benefit from each other's ministry. Upload your sermon notes to help, eancourage and inspire the community`;
   const imgSource = "assets/images/bkgs/sermons_big.png";
 
   // render next component on mobile
@@ -38,6 +38,10 @@
       scrollCount = 0;
     }
   };
+
+  // --------------- masure media query
+  let mediaWidth = window.innerWidth;
+  window.addEventListener("resize", () => (mediaWidth = window.innerWidth));
 </script>
 
 <div class="main-wrapper" on:wheel|nonpassive={checkScrollingDistance}>
@@ -46,6 +50,7 @@
     {description}
     {imgSource}
     on:renderNextMobile={renderNextMobile}
+    additionalStyles={mediaWidth >= 750 ? `transform: translateX(-5rem);` : ""}
   />
 </div>
 

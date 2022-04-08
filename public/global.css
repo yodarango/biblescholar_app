@@ -330,3 +330,9 @@ a:link {
     --max-width-main-wrapper: 110rem;
   }
 }
+
+@media (min-width: 1200px) {
+  .main-wrapper {
+    max-width: 1400px;
+  }
+}

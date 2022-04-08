@@ -14,7 +14,7 @@
   import GVerseByVerse from "../components/pages/G_VerseByVerse.svelte";
 
   // states
-  let currentPage = 1;
+  let currentPage = 2;
   let currentIconOffset = 0;
   let iconSrc = "assets/images/icons/chat_bubbles.png";
 

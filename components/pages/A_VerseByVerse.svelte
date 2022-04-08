@@ -6,8 +6,8 @@
   import DescriptionModules from "../layouts/templates/descriptionModules.svelte";
 
   // props
-  const title = "Verse By Verse Comments";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const title = "Verse Commentaries";
+  const description = `See what others have to say about a specific verse and join them by sharing your own commentaries on a verse by vser basis also`;
   const imgSource = "assets/images/bkgs/chat_bubbles_big.png";
 
   // render next component on mobile

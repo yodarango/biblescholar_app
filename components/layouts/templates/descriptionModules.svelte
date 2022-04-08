@@ -49,7 +49,7 @@
     alt="iphone 12"
     class="iphone-display"
   /> -->
-  <div class="iphone-display-wrapper">
+  <div class={`${mobile ? "mobile" : ""} iphone-display-wrapper`}>
     <div class="iphone-display up" />
     <div class="iphone-display down" />
   </div>
@@ -67,7 +67,7 @@
 
   .title-wrapper {
     position: relative;
-    max-width: 70rem;
+    max-width: 80rem;
     width: 100%;
     margin: var(--medium-spacing) 0 var(--large-spacing);
     z-index: 2;
@@ -152,12 +152,17 @@
     }
   }
 
-  /* ------------------- ipphone model ------------------------- */
+  /* ------------------- iphone model ------------------------- */
+  .iphone-display-wrapper.mobile,
   .iphone-display-wrapper {
     width: 100%;
     margin: 0;
     position: relative;
     transform: translateY(-8rem);
+  }
+
+  .iphone-display-wrapper {
+    transform: none;
   }
 
   .iphone-display {
@@ -168,26 +173,85 @@
     height: 33rem;
     width: 100%;
     margin: 0;
+    left: 0;
+    top: 0;
     position: absolute;
   }
 
   .iphone-display.up {
     background-position: -8rem center;
     z-index: 0;
+    animation: iPhoneModelEntryUp 2500ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .iphone-display.down {
     z-index: 1;
     height: 35rem;
+    max-width: 35rem;
     background-size: 77%;
     background-position: 2rem 10rem;
     background-image: url("/assets/images/iphone_laying.png");
+    animation: iPhoneModelEntryDown 2500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @keyframes iPhoneModelEntryUp {
+    0% {
+      opacity: 0.3;
+      left: -20rem;
+    }
+    100% {
+      opacity: 1;
+      left: 0rem;
+    }
+  }
+
+  @keyframes iPhoneModelEntryDown {
+    0% {
+      opacity: 0.3;
+      top: 25rem;
+    }
+    100% {
+      opacity: 1;
+      top: 0rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .iphone-display-wrapper {
+      transform: none;
+    }
+    .iphone-display.down {
+      top: 55rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 55rem;
+      margin: auto;
+      background-position: center;
+    }
+
+    .iphone-display.up {
+      background-position: -8rem center;
+      z-index: 0;
+      height: 45rem;
+    }
+
+    @keyframes iPhoneModelEntryDown {
+      0% {
+        opacity: 0.3;
+        top: 85rem;
+      }
+      100% {
+        opacity: 1;
+        top: 55rem;
+      }
+    }
   }
 
   @media (min-width: 750px) {
     .image-wrapper {
       width: 80%;
-      /* transform: translateY(-20rem); */
+      transform: translate(15rem, 15rem);
     }
 
     .image-wrapper img {
@@ -197,13 +261,50 @@
     .bkg-3d {
       animation: imageIntroDesktop 1000ms ease;
     }
+
+    /* ------------- iphone model rendering -------------- */
+    .iphone-display-wrapper {
+      max-width: 75rem;
+      transform: translateY(-3rem);
+      margin: auto;
+    }
+
+    .iphone-display.down {
+      top: 60rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 65rem;
+      height: 45rem;
+      margin: auto;
+      background-position: 15rem center;
+    }
+
+    .iphone-display.up {
+      background-position: -2rem center;
+      z-index: 0;
+      height: 50rem;
+    }
+
+    @keyframes iPhoneModelEntryDown {
+      0% {
+        opacity: 0.3;
+        top: 85rem;
+      }
+      100% {
+        opacity: 1;
+        top: 60rem;
+      }
+    }
   }
 
   @media (min-width: 1050px) {
     .image-wrapper {
       width: 80%;
-      margin: auto auto auto 0;
-      /* transform: translate(-4rem, -30rem); */
+      margin: 0;
+      left: 50%;
+      transform: none;
+      margin: 0;
     }
   }
 
@@ -214,6 +315,18 @@
       margin: 15rem auto 0;
       align-items: flex-end;
       justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .title-wrapper,
+    .description-wrapper {
+      width: 45%;
+    }
+
+    /* -------- iphone model -------- */
+    .iphone-display-wrapper {
+      width: 50%;
+      transform: translate(-30rem, -30rem);
     }
   }
 </style>

@@ -8,7 +8,7 @@
 
   // props
   const title = "Share Your Thoughts";
-  const description = `Born on September 22, 2011, Slavery Footprint is a non-profit organization that works to ens mission of freeing the modern-day slaves.`;
+  const description = `Engage with the community by sharing your thoughts about particular biblical topics that are of interest to you`;
   const imgSource = "assets/images/bkgs/bulb_big.png";
 
   // render next component on mobile
@@ -50,7 +50,9 @@
     {description}
     {imgSource}
     on:renderNextMobile={renderNextMobile}
-    additionalStyles={mediaWidth >= 750 ? `transform: translateY(10rem)` : ""}
+    additionalStyles={mediaWidth >= 750
+      ? `transform: translateY(-5rem); width: 80%;`
+      : ""}
   />
 </div>
 
