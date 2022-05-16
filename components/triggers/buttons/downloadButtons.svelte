@@ -39,7 +39,7 @@
   .heading-text {
     width: 100%;
     text-align: center;
-    color: var(--fourth-color);
+    color: var(--font-color);
   }
 
   .download-button {

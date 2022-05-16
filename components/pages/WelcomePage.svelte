@@ -25,24 +25,23 @@
       /></button
     >
   </div>
-  <img
-    draggable="false"
-    src="assets/images/Africa.png"
-    alt="planet earth"
-    class="plannet-earth"
-  />
+  <video class="bkg-video" src="assets/Scholarapp_bkg.mov" autoplay muted loop>
+    <track kind="captions" />
+  </video>
 </div>
 
 <style>
-  .plannet-earth {
-    position: absolute;
-    width: 80vw;
-    bottom: -10rem;
-    left: -30rem;
-    object-fit: contain;
-    object-position: center;
-    transform: rotate(-45deg);
-    z-index: 1;
+  .bkg-video {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
   }
 
   /* --------- button --------- */
@@ -63,6 +62,10 @@
   }
 
   @media (min-width: 750px) {
+    .bkg-video {
+      top: 50%;
+      left: 30%;
+    }
     .button-wrapper {
       width: 30rem;
       margin: 0 0 0 auto;
@@ -86,6 +89,10 @@
   }
 
   @media (min-width: 1050px) {
+    .bkg-video {
+      top: 50%;
+      left: 50%;
+    }
     .button-wrapper {
       bottom: 5rem;
       right: 15rem;

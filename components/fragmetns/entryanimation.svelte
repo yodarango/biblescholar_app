@@ -50,14 +50,20 @@
   }
 
   .logo {
-    width: 100%;
+    width: 10rem;
     margin: auto;
     display: block;
     object-fit: center;
     object-position: center;
     animation: IntroLogo 3s ease-in-out;
     max-width: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: calc(50vh + 2rem);
+    right: 0;
   }
+
   @keyframes IntroText {
     0% {
       opacity: 0;
@@ -76,6 +82,12 @@
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .logo {
+      width: 15rem;
     }
   }
 </style>
