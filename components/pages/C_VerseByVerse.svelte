@@ -10,6 +10,8 @@
   const title = "Quotes Are Awesome";
   const description = `Everyone loves a good quote. They are inspirational, easy to remember, and concise enough to get a point across in just a few words. Let the community see yours`;
   const imgSource = "assets/images/bkgs/quotes.png";
+  const phoneUp = "assets/images/screens/phone_up_3.png";
+  const phoneDown = "assets/images/screens/phone_down_3.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -49,6 +51,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
     additionalStyles={mediaWidth >= 750
       ? `transform: translate(5rem, -5rem); width: 80%;`

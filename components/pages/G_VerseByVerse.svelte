@@ -10,6 +10,8 @@
   const title = "What's Going on";
   const description = `See what everyone has shared in the last 24 hours as well as exclusive daily content by differnet collaborators`;
   const imgSource = "assets/images/bkgs/last_24_big.png";
+  const phoneUp = "assets/images/screens/phone_up_7.png";
+  const phoneDown = "assets/images/screens/phone_down_7.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -45,6 +47,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
   />
 </div>

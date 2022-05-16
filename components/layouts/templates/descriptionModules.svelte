@@ -8,6 +8,8 @@
   export let description = "";
   export let imgSource = "";
   export let additionalStyles = "";
+  export let phoneUp = "";
+  export let phoneDown = "";
 
   // -------- check whther the user is in mobile
   const UA = navigator.userAgent;
@@ -51,8 +53,14 @@
     class="iphone-display"
   /> -->
   <div class={`${mobile ? "mobile" : ""} iphone-display-wrapper`}>
-    <div class="iphone-display up" />
-    <div class="iphone-display down" />
+    <div
+      class="iphone-display up"
+      style={`background-image: url(${phoneUp})`}
+    />
+    <div
+      class="iphone-display down"
+      style={`background-image: url(${phoneDown})`}
+    />
   </div>
 </div>
 
@@ -167,7 +175,6 @@
   }
 
   .iphone-display {
-    background-image: url("/assets/images/iphone_standing.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -191,7 +198,6 @@
     max-width: 35rem;
     background-size: 77%;
     background-position: 2rem 10rem;
-    background-image: url("/assets/images/iphone_laying.png");
     animation: iPhoneModelEntryDown 2500ms cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 

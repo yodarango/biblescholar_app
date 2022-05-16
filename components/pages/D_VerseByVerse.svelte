@@ -10,6 +10,8 @@
   const title = "Upload Sermon Notes";
   const description = `We are a body and we all benefit from each other's ministry. Upload your sermon notes to help, encourage and inspire the community`;
   const imgSource = "assets/images/bkgs/sermons_big.png";
+  const phoneUp = "assets/images/screens/phone_up_4.png";
+  const phoneDown = "assets/images/screens/phone_down_4.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -49,6 +51,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
     additionalStyles={mediaWidth >= 750 ? `transform: translateX(-5rem);` : ""}
   />

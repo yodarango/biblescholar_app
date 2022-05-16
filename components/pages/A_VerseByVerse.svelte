@@ -9,6 +9,8 @@
   const title = "Verse Commentaries";
   const description = `See what others have to say about a specific verse and join them by also sharing your own commentaries on a verse by verse basis`;
   const imgSource = "assets/images/bkgs/chat_bubbles_big.png";
+  const phoneUp = "assets/images/screens/phone_up_1.png";
+  const phoneDown = "assets/images/screens/phone_down_1.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -45,6 +47,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneUp}
+    {phoneDown}
     on:renderNextMobile={renderNextMobile}
   />
 </div>

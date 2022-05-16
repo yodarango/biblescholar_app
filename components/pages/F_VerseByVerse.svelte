@@ -10,6 +10,8 @@
   const title = "Find 100's Of Locations";
   const description = `Search hundreds of locations by state, city, or zip. You can find helpful information as times of service, driving directions, website, and more `;
   const imgSource = "assets/images/bkgs/churches_big.png";
+  const phoneUp = "assets/images/screens/phone_up_6.png";
+  const phoneDown = "assets/images/screens/phone_down_6.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -49,6 +51,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
     additionalStyles={mediaWidth >= 750
       ? `transform: translate(-5rem, 0rem)`

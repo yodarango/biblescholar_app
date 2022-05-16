@@ -10,6 +10,8 @@
   const title = "Share Your Thoughts";
   const description = `Engage with the community by sharing your thoughts about particular biblical topics that are of interest to you`;
   const imgSource = "assets/images/bkgs/bulb_big.png";
+  const phoneUp = "assets/images/screens/phone_up_2.png";
+  const phoneDown = "assets/images/screens/phone_down_2.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -49,6 +51,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
     additionalStyles={mediaWidth >= 750
       ? `transform: translateY(-5rem); width: 80%;`

@@ -10,6 +10,8 @@
   const title = "Browse Tons Of Content";
   const description = `From preachings, to podcast channels, websites, articles and more. Search the database for any kind of content you desire`;
   const imgSource = "assets/images/bkgs/media_content_big.png";
+  const phoneUp = "assets/images/screens/phone_up_5.png";
+  const phoneDown = "assets/images/screens/phone_down_5.png";
 
   // render next component on mobile
   const renderNextMobile = () => {
@@ -45,6 +47,8 @@
     {title}
     {description}
     {imgSource}
+    {phoneDown}
+    {phoneUp}
     on:renderNextMobile={renderNextMobile}
   />
 </div>
