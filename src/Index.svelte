@@ -20,7 +20,7 @@
 
   setTimeout(() => {
     currentPage = 1;
-  }, 10000);
+  }, 9000);
 
   let canRenderNext = true;
 

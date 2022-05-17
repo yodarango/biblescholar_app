@@ -25,7 +25,14 @@
       /></button
     >
   </div>
-  <video class="bkg-video" src="assets/Scholarapp_bkg.mov" autoplay muted loop>
+  <video
+    class="bkg-video"
+    src="assets/Scholarapp_bkg.mov"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
     <track kind="captions" />
   </video>
 </div>
@@ -42,6 +49,7 @@
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
+    animation: videoIntro 3000ms linear;
   }
 
   /* --------- button --------- */
@@ -59,6 +67,15 @@
 
   .std-button.with-icon:active span {
     background-position: 1rem center;
+  }
+
+  @keyframes videoIntro {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   @media (min-width: 750px) {
