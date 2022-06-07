@@ -54,4 +54,9 @@
 </div>
 
 <style>
+  @media (min-height: 850px) {
+    .main-wrapper {
+      transform: translateY(6vh);
+    }
+  }
 </style>

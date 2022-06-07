@@ -1,7 +1,9 @@
 <section class="std-flex-row std-flex--wrap buttons-wrapper">
-  <h5 class="heading-text">Coming Soon!</h5>
-  <button
-    data-href="https://apps.apple.com/us/app/girlspring/id1520838902"
+  <h5 class="heading-text">Download Now!</h5>
+  <a
+    href="https://apps.apple.com/us/app/bible-scholar-app/id1625968262"
+    target="_blank"
+    rel="noopener noreferrer"
     class="small-button download-button apple-btn std-flex-row std-flex--nowrap"
   >
     <div class="apple-logo-btn">
@@ -10,9 +12,11 @@
       <span class="left" />
     </div>
     <span class="app-store-btn-text">App Store</span>
-  </button>
-  <button
-    href="https://play.google.com/store?utm_source=na_Med&utm_medium=hasem&utm_content=Oct0120&utm_campaign=Evergreen&pcampaignid=MKT-EDR-na-us-1000189-Med-hasem-py-Evergreen-Oct0120-Text_Search_BKWS-id_101419_%7cEXA%7cONSEM_kwid_43700023142506860&gclsrc=ds&gclsrc=ds"
+  </a>
+  <a
+    href="https://play.google.com/store/apps/details?id=my.biblescholar.app&hl=en_US&gl=US"
+    target="_blank"
+    rel="noopener noreferrer"
     class="small-button download-button google-play-btn std-flex-row std-flex--nowrap"
   >
     <div class="google-play-logo-btn">
@@ -23,7 +27,7 @@
       <span class="google-shadow" />
     </div>
     <span class="google-play-btn-text">Play Store</span>
-  </button>
+  </a>
 </section>
 
 <style>
